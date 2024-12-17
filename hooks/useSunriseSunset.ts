@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { SunriseSunsetData, GeolocationData } from "../lib/types";
+import { SunriseSunsetData, GeolocationData } from "@/lib/types";
 
 export function useSunriseSunset(location: GeolocationData | null) {
   const [sunData, setSunData] = useState<SunriseSunsetData | null>(null);

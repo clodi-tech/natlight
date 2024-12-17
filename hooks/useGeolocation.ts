@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { GeolocationData } from "../lib/types";
+import { GeolocationData } from "@/lib/types";
 
 // Add Milan's coordinates as default
 const MILAN_COORDINATES: GeolocationData = {

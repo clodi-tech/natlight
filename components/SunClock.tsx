@@ -73,7 +73,7 @@ export default function SunClock() {
       <CardContent>
         <div className="text-center space-y-4">
           <p className="text-4xl font-bold">
-            {currentTime.toLocaleTimeString()}
+            {currentTime.toLocaleTimeString("en-US", { hour12: false })}
           </p>
           {locationError && (
             <p className="text-yellow-500" role="alert">
