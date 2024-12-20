@@ -72,7 +72,7 @@ export default function SunClock() {
       </CardHeader>
       <CardContent>
         <div className="text-center space-y-4">
-          <p className="text-4xl font-bold">
+          <p className="text-4xl font-bold font-mono">
             {currentTime.toLocaleTimeString("en-US", { hour12: false })}
           </p>
           {locationError && (
@@ -88,13 +88,13 @@ export default function SunClock() {
             <>
               <div>
                 <p>Time since last {lastEvent?.type}:</p>
-                <p className="text-2xl font-semibold">
+                <p className="text-2xl font-semibold font-mono">
                   {lastEvent ? formatTimeDifference(lastEvent.time) : "N/A"}
                 </p>
               </div>
               <div>
                 <p>Time until next {nextEvent?.type}:</p>
-                <p className="text-2xl font-semibold">
+                <p className="text-2xl font-semibold font-mono">
                   {nextEvent ? formatTimeDifference(nextEvent.time) : "N/A"}
                 </p>
               </div>
